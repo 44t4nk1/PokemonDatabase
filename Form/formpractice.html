@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Demo</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        <label>Email:
+            <input name="email" type="email" placeholder="email" required>
+        </label>
+        <!--Alt Syntax for label-->
+        <label for="pass">Password:</label>
+            <input id="pass" name="password" type="password" placeholder="password" required>
+        </label>
+        
+        <input type="submit">
+    </form>
+    <h3>Do you prefer Cats or Dogs?</h3>
+    <form>
+        <label for="dogs">Dogs:</label>
+        <input id="dogs" name="choice" type="radio" value="dog" required>
+        <label for="cats">Cats:</label>
+        <input id="cats" name="choice" type="radio" value="cat" required>
+        <p>What's your current mood?</p>
+        <select name="mood" required>
+            <option value="happy">:)</option>
+            <option value="null">:|</option>
+            <option value="sad">:(</option>
+        </select>
+        <button>Go!</button>
+    </form>
+    <form>
+        <textarea name="para" rows="50" cols="50"></textarea>
+        <button>Enter</button>
+    </form>
+</body>
+</html>
